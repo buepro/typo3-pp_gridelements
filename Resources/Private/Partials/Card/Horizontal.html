@@ -1,0 +1,24 @@
+<html lang="en" data-namespace-typo3-fluid="true"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="https://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:v="https://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+<div class="row no-gutters">
+    <f:if condition="{data.flexform_imagePosition} == left">
+        <div class="col-md-4 ppc-image-col">
+            <f:render partial="Card/Parts/Image" arguments="{_all}" />
+        </div>
+        <div class="col-md-8 ppc-content-col">
+            <f:render partial="Card/Parts/Body" arguments="{_all}" />
+        </div>
+    </f:if>
+    <f:if condition="{data.flexform_imagePosition} == right">
+        <div class="col-md-8 ppc-content-col">
+            <f:render partial="Card/Parts/Body" arguments="{_all}" />
+        </div>
+        <div class="col-md-4 ppc-image-col">
+            <f:render partial="Card/Parts/Image" arguments="{_all}" />
+        </div>
+    </f:if>
+</div>
+</html>

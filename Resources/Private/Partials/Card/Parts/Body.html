@@ -1,0 +1,46 @@
+<html lang="en" data-namespace-typo3-fluid="true"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="https://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:v="https://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+
+<f:if condition="{data.flexform_imagePosition} == 'below'">
+    <f:then>
+        <f:render section="BodyContent" arguments="{_all}" />
+    </f:then>
+    <f:else>
+        {f:variable(name: '_bodyClasses', value: ' {data.flexform_bodyClasses}') -> f:if(condition: data.flexform_bodyClasses)}
+        <div class="card-body{_bodyClasses}">
+            <f:render section="BodyContent" arguments="{_all}" />
+        </div>
+    </f:else>
+</f:if>
+
+<f:section name="BodyContent">
+    <f:if condition="{data.flexform_titleLink}">
+        <f:then>
+            <f:link.typolink parameter="{data.flexform_titleLink}">
+                <f:render section="TitleText" arguments="{_all}" />
+            </f:link.typolink>
+        </f:then>
+        <f:else>
+            <f:render section="TitleText" arguments="{_all}" />
+        </f:else>
+    </f:if>
+    {data.flexform_bodyText -> f:format.html()}
+    <f:if condition="{children.1.101}">
+        <div class="ppc-content-wrap">
+            <f:for each="{children.1.101}" as="item">
+                <v:content.render contentUids="{0: item.data.uid}"/>
+            </f:for>
+        </div>
+    </f:if>
+</f:section>
+
+<f:section name="TitleText">
+    {f:variable(name: '_position', value: ' text-{data.flexform_titlePosition}') -> f:if(condition: data.flexform_titlePosition)}
+    {f:variable(name: '_titleClasses', value: ' {data.flexform_titleClasses}') -> f:if(condition: data.flexform_titleClasses)}
+    <{data.flexform_titleLayout} class="card-title{_position}{_titleClasses}">{data.flexform_titleText}</{data.flexform_titleLayout}>
+</f:section>
+
+</html>
