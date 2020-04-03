@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT type="array">
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:options</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el type="array">
+                    <containerClass type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:containerClass</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </containerClass>
+                    <containerAttribute type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:containerAttribute</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </containerAttribute>
+                    <wrapSection type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:wrapSection</label>
+                            <config type="array">
+                                <type>check</type>
+                            </config>
+                        </TCEforms>
+                    </wrapSection>
+                    <sectionClass type="array">
+                        <TCEforms type="array">
+                            <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:sectionClass</label>
+                            <config type="array">
+                                <type>input</type>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </sectionClass>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

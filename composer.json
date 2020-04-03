@@ -1,0 +1,43 @@
+{
+    "name": "buepro/typo3-pp-gridelements",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 extension providing content elements powered by gridelements and bootstrap. Available elements: container, columns, tabs, accordion, tile unit and card.",
+    "keywords": [
+        "TYPO3 CMS",
+        "gridelements",
+        "grid",
+        "structure",
+        "element",
+        "pizpalue"
+    ],
+    "homepage": "https://github.com/buepro/typo3-pp_gridelements",
+    "authors": [
+        {
+            "name": "Roman Büchler",
+            "email": "rb@buechler.pro",
+            "homepage": "https://www.buechler.pro/",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "typo3/cms-core": "^9.5",
+        "gridelementsteam/gridelements": "^9"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buepro\\PpGridelements\\": "Classes/"
+        }
+    },
+    "replace": {
+        "typo3-ter/pp-gridelements": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "pp_gridelements"
+        }
+    }
+}

@@ -1,0 +1,179 @@
+tx_gridelements {
+    setup {
+        ppContainer {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:container.title
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:container.description
+            iconIdentifier = Container
+            topLevelLayout = 0
+            config {
+                colCount = 1
+                rowCount = 1
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:container.title
+                        colPos = 101
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Container.xml
+        }
+
+        ppColumns2 {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.twoColumnTitle
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.twoColumnDescription
+            iconIdentifier = Columns2
+            topLevelLayout = 0
+            config {
+                colCount = 2
+                rowCount = 1
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column1
+                        colPos = 101
+                    }
+                    columns.2 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column2
+                        colPos = 102
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Columns2.xml
+        }
+
+        ppColumns3 < .ppColumns2
+        ppColumns3 {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.threeColumnTitle
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.threeColumnDescription
+            iconIdentifier = Columns3
+            topLevelLayout = 0
+            config {
+                colCount = 3
+                rows.1 {
+                    columns.3 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column3
+                        colPos = 103
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Columns3.xml
+        }
+
+        ppColumns4 < .ppColumns3
+        ppColumns4 {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.fourColumnTitle
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.fourColumnDescription
+            iconIdentifier = Columns4
+            topLevelLayout = 0
+            config {
+                colCount = 4
+                rows.1 {
+                    columns.4 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column4
+                        colPos = 104
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Columns4.xml
+        }
+
+        ppTabs {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tabs.title
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tabs.description
+            iconIdentifier = Tabs
+            topLevelLayout = 0
+            config {
+                colCount = 1
+                rowCount = 1
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tabs.title
+                        colPos = 101
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Tabs.xml
+        }
+
+        ppAccordion {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:accordion.title
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:accordion.description
+            iconIdentifier = Accordion
+            topLevelLayout = 0
+            config {
+                colCount = 1
+                rowCount = 1
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:accordion.title
+                        colPos = 101
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Accordion.xml
+        }
+
+        ppTileUnit {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tileUnit.title
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tileUnit.description
+            iconIdentifier = TileUnit
+            topLevelLayout = 0
+            config {
+                colCount = 2
+                rowCount = 1
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tileUnit.left
+                        colPos = 101
+                    }
+                    columns.2 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tileUnit.right
+                        colPos = 102
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/TileUnit.xml
+        }
+
+        ppCard {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:card.title
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:card.description
+            iconIdentifier = Card
+            topLevelLayout = 0
+            config {
+                colCount = 1
+                rowCount = 2
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:card.content
+                        colPos = 101
+                    }
+                }
+                rows.2 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:card.imageContent
+                        colPos = 201
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/Card.xml
+        }
+
+        ppContainerFixed {
+            title = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:containerFixed.title
+            description = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:containerFixeddescription
+            iconIdentifier = ContainerFixed
+            topLevelLayout = 0
+            config {
+                colCount = 1
+                rowCount = 1
+                rows.1 {
+                    columns.1 {
+                        name = LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:containerFixed.title
+                        colPos = 101
+                    }
+                }
+            }
+            flexformDS = FILE:EXT:pp_gridelements/Configuration/FlexForms/ContainerFixed.xml
+        }
+    }
+}
