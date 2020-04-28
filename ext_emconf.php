@@ -18,8 +18,8 @@ $EM_CONF[$_EXTKEY] = [
     'author_email'     => 'rb@buechler.pro',
     'constraints'      => [
         'depends'   => [
-            'typo3'         => '9.5.0-9.99.99',
-            'gridelements'  => '9.5.0-9.99.99',
+            'typo3'         => '9.5.0-10.4.99',
+            'gridelements'  => '9.5.0-10.99.99',
         ],
         'conflicts' => [],
     ],
