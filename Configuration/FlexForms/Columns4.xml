@@ -16,6 +16,7 @@
                             <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column1</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <default>col-md-3</default>
                                 <items type="array">
                                     <numIndex index="1" type="array">
@@ -83,6 +84,7 @@
                             <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column2</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <default>col-md-3</default>
                                 <items type="array">
                                     <numIndex index="1" type="array">
@@ -150,6 +152,7 @@
                             <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column3</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <default>col-md-3</default>
                                 <items type="array">
                                     <numIndex index="1" type="array">
@@ -217,6 +220,7 @@
                             <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:columns.column4</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <default>col-md-3</default>
                                 <items type="array">
                                     <numIndex index="1" type="array">

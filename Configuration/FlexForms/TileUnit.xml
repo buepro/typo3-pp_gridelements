@@ -16,6 +16,7 @@
                         <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tileUnit.columnDistribution</label>
                         <config type="array">
                             <type>select</type>
+                            <renderType>selectSingle</renderType>
                             <default>11</default>
                             <items type="array">
                                 <numIndex index="1" type="array">
@@ -43,6 +44,7 @@
                         <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:tileUnit.columnBreakpoint</label>
                         <config type="array">
                             <type>select</type>
+                            <renderType>selectSingle</renderType>
                             <default>md</default>
                             <items type="array">
                                 <numIndex index="1" type="array">

@@ -16,6 +16,7 @@
                             <label>LLL:EXT:pp_gridelements/Resources/Private/Language/locallang.xlf:style</label>
                             <config type="array">
                                 <type>select</type>
+                                <renderType>selectSingle</renderType>
                                 <default></default>
                                 <items type="array">
                                     <numIndex index="0" type="array">
