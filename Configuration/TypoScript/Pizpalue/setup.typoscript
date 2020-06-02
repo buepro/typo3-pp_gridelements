@@ -1,0 +1,8 @@
+tt_content.gridelements_pi1 {
+    templateRootPaths {
+        200603 = EXT:pp_gridelements/Resources/Private/Templates/Pizpalue/
+    }
+    partialRootPaths {
+        200603 = EXT:pp_gridelements/Resources/Private/Partials/Pizpalue/
+    }
+}

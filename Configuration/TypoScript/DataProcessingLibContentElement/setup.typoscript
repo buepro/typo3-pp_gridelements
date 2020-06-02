@@ -1,9 +1,9 @@
 tt_content.gridelements_pi1 {
     templateRootPaths {
-        20 = EXT:pp_gridelements/Resources/Private/Templates/
+        20 = EXT:pp_gridelements/Resources/Private/Templates/General/
     }
     partialRootPaths {
-        20 = EXT:pp_gridelements/Resources/Private/Partials/
+        20 = EXT:pp_gridelements/Resources/Private/Partials/General/
     }
     dataProcessing {
         10 {

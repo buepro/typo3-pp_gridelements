@@ -1,6 +1,6 @@
 #===============================================================================================================
 #
-# DEPRECIATED since 11.1.2, will be removed in 12.0.0
+# DEPRECIATED since DEPRECIATED since 1.0.0, will be removed in 2.0.0
 #
 # File will be removed.
 #
@@ -8,24 +8,32 @@
 
 temp.pp_gridelements.gridelements_pi1.setup < tt_content.gridelements_pi1.20.10.setup
 tt_content.gridelements_pi1 {
-   20 >
-   20 = FLUIDTEMPLATE
-   20 {
-      templateName = Gridelements
-      layoutRootPaths < lib.contentElement.layoutRootPaths
-      templateRootPaths < lib.contentElement.templateRootPaths
-      partialRootPaths < lib.contentElement.partialRootPaths
+    20 >
+    20 = FLUIDTEMPLATE
+    20 {
+        templateName = Gridelements
+        layoutRootPaths < lib.contentElement.layoutRootPaths
+        templateRootPaths < lib.contentElement.templateRootPaths
+        templateRootPaths {
+            20 = EXT:pp_gridelements/Resources/Private/Templates/Depreciated
+            22 = EXT:pp_gridelements/Resources/Private/Templates/General
+        }
 
-      settings < lib.contentElement.settings
+        partialRootPaths < lib.contentElement.partialRootPaths
+        partialRootPaths {
+            20 = EXT:pp_gridelements/Resources/Private/Partials/General
+        }
 
-      variables {
-         content = USER
-         content {
-            userFunc = GridElementsTeam\Gridelements\Plugin\Gridelements->main
-            setup < temp.pp_gridelements.gridelements_pi1.setup
-         }
-      }
+        settings < lib.contentElement.settings
 
-      dataProcessing < lib.pp_gridelements.contentElement.dataProcessing
-   }
+        variables {
+            content = USER
+            content {
+                userFunc = GridElementsTeam\Gridelements\Plugin\Gridelements->main
+                setup < temp.pp_gridelements.gridelements_pi1.setup
+            }
+        }
+
+        dataProcessing < lib.pp_gridelements.contentElement.dataProcessing
+    }
 }
