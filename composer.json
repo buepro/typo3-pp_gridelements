@@ -21,8 +21,8 @@
     ],
     "license": ["GPL-2.0-or-later"],
     "require": {
-        "typo3/cms-core": "^9.5 || ^10.4",
-        "gridelementsteam/gridelements": "^9 || ^10",
+        "typo3/cms-core": "^9.5 || ^10.4 || dev-master",
+        "gridelementsteam/gridelements": "^9 || ^10 || ^11 || dev-master",
         "fluidtypo3/vhs": "^6.0 || dev-master"
     },
     "require-dev": {
