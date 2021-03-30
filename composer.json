@@ -21,9 +21,9 @@
     ],
     "license": ["GPL-2.0-or-later"],
     "require": {
-        "typo3/cms-core": "^10.4.11 || dev-master",
+        "typo3/cms-core": "^10.4.11 || ^11.1@dev",
         "gridelementsteam/gridelements": "^10 || ^11 || dev-master",
-        "fluidtypo3/vhs": "^6.0 || dev-master"
+        "fluidtypo3/vhs": "^6.0.3 || ^7@dev"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
@@ -40,6 +40,9 @@
     "extra": {
         "typo3/cms": {
             "extension-key": "pp_gridelements"
+        },
+        "branch-alias": {
+            "dev-master": "1.x-dev"
         }
     }
 }
