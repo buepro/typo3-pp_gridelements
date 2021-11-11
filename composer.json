@@ -51,6 +51,7 @@
     },
     "require-dev": {
         "buepro/typo3-pizpalue": "11.7.1",
+        "friendsofphp/php-cs-fixer": "^3.0.0",
         "friendsoftypo3/phpstan-typo3": "^0.8.1",
         "helhum/typo3-console": "^6.6 || ^7.0.2",
         "roave/security-advisories": "dev-latest",
@@ -96,6 +97,12 @@
             "ddev composer typo3cms:database:export",
             "ddev delete",
             "rm -rf .build/"
+        ],
+        "cgl": [
+            "php-cs-fixer --diff -v fix"
+        ],
+        "cgl:ci": [
+            "php-cs-fixer --diff -v --dry-run fix"
         ]
     }
 }
